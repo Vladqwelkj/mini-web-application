@@ -24,7 +24,7 @@ def generate_content(code, url):
         return '<h1>404</h1><p>Not found</p>'
     if code == 405:
         return '<h1>405</h1><p>Method not allowed</p>'
-    return '{}'.format(URLS[url])
+    return '{}'.format(URLS[url]())
 
 def generate_response(request):
     method, url = parse_request(request)
