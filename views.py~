@@ -3,5 +3,5 @@ def index():
         return tempalte.read()
 
 def blog():
-    with open('templates/blog.html') as template:
+    with open('templates/blog.html') as template
         return template.read()
